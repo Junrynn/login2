@@ -173,7 +173,7 @@
 
       .ucapan {
          position: absolute;
-         left: 124px;
+         width: 100%;
          top: 275px;
          font-family: Sedan;
          font-style: normal;
@@ -515,7 +515,4 @@
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
- .cf {
- 	*zoom: 1;
- }
 
