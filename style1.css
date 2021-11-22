@@ -127,21 +127,17 @@
       }
 
       .banner .cinfo {
-         width: 253px;
-         height: 30px;
          font-family: Sedan;
          font-style: normal;
          font-weight: normal;
          font-size: 22px;
          line-height: 30px;
-         text-align: center;
          color: #000000;
          border: 0 solid #000000;
+         padding-left: 10px;
       }
 
       .banner .dinfo {
-         width: 203px;
-         height: 39px;
          font-family: Sedan;
          font-style: normal;
          font-weight: normal;
@@ -177,8 +173,6 @@
 
       .ucapan {
          position: absolute;
-         width: 165px;
-         height: 33px;
          left: 124px;
          top: 275px;
          font-family: Sedan;
