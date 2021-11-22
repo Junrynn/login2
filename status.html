@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title id="title"></title>
+  $(if refresh-timeout)
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+  <meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+  $(endif)
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="-1">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="style.css">  
+  <style>
+    iframe  {float:left; height:95%; width:100%;}
+  </style>
+  <script type="text/javascript" src="data.js"></script>
+  <script src="d3.v3.min.js"></script>
+
+  <!-- jam -->
+
+  <script type="text/javascript">
+   window.onload = function() { jam(); }
+
+   function jam() {
+    var e = document.getElementById('jam'),
+    d = new Date(), h, m, s;
+    h = d.getHours();
+    m = set(d.getMinutes());
+    s = set(d.getSeconds());
+
+    e.innerHTML = h +':'+ m +':'+ s;
+
+    setTimeout('jam()', 1000);
+  }
+
+  function set(e) {
+    e = e < 10 ? '0'+ e : e;
+    return e;
+  }
+</script>
+
+<!-- akhir jam -->
+
+<script language="JavaScript">
+
+  $(if advert-pending == 'yes')
+  var popup = '';
+  function focusAdvert() {
+    if (window.focus) popup.focus();
+  }
+  function openAdvert() {
+    popup = open('$(link-advert)', 'hotspot_advert', '');
+    setTimeout("focusAdvert()", 1000);
+  }
+  $(endif)
+  function openLogout() {
+    if (window.name != 'hotspot_status') return true;
+    open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+    window.close();
+    return false;
+  }
+
+</script>
+
+<!-- paket -->
+
+<style type="text/css">
+  .middle1{
+    width: 530px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius:5px;
+    padding: 10px;
+    margin: 10px 5px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: none;
+  }
+  table.tstatus {
+    background: #ffffff;
+    width: 100%;
+    height: 100px;
+    color: black;
+    border-collapse: collapse;
+  }
+
+  table.tstatus tr:nth-of-type(odd) {
+    background: #f1f1f1;
+  }
+  table.tstatus td {
+    padding: 1px;
+    border: 1px solid #ccc;
+  }
+
+  table.tpaketwifi {
+    font-size: 9px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+  }
+
+  table.tpaketwifi td {
+    border: 2px solid #ccc;
+    padding-left: 1px;
+  }
+
+  table.tpaketwifi tr:first-child{
+    background:#008CCA;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  table.tpaketwifi tr:nth-child(even){
+    background-color: #f1f1f1
+  }
+  /* layar 850px kebawah */
+  @media screen and (max-width: 876px) {
+
+    .middle1 {
+      width: 89%;
+      float: none;
+    }
+  }
+
+
+  /*  layar 600px kebawah */
+  @media screen and (max-width: 600px) {
+
+    .middle1 {
+      height: auto;
+      width: auto;
+      float: none;
+    }
+  }
+
+</style>
+
+<!-- akhir paket -->
+
+<!-- contact -->
+
+<script> 
+  window.intergramId = "1802565352";
+  window.intergramCustomizations = {
+    titleClosed: 'Chat Admin',
+    titleOpen: 'Admin Junrynn',
+    introMessage: 'Hallo sobat junrynn ada yang bisa di bantu?',
+    autoResponse: 'Silahkan tunggu admin akan segera membalas :)',
+    autoNoResponse: 'Mohon tunggu ya ' +
+    'Atau bisa kembali nanti :)',
+    mainColor: "#E91E63",
+    alwaysUseFloatingButton: false
+  };
+</script>
+<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+
+<!-- akhir contact -->
+
+</head>
+<body class="bg">
+
+  <center>
+
+    <!-- jadwal -->
+
+    <script type="text/javascript">
+      document.write("<center><font size=+3 style='color: #008CCA; background-color: rgba(255, 255, 255, 0.7); border: none; border-radius: 10px; padding: 6px;'>");
+      var day = new Date();
+      var currentHour = day.getHours();
+      if (currentHour >= 0 && currentHour < 12) {
+        document.write("Selamat Pagi");
+      } else if (currentHour == 12) {
+        document.write("Selamat Siang");
+      } else if (currentHour >= 12 && currentHour <= 17) {
+        document.write("Selamat Sore");
+      } else {
+        document.write("Selamat Malam");
+      }
+      document.write("</font></center>");
+    </script>
+    <br>
+    <center><h5 style="font-size: 25px; font-family: verdana; width: 200px; margin: 1px; margin-top: -6px; background-color: rgba(255, 255, 255, 0.7); color: #008CCA; border: none; border-radius: 10px;" id="jam"></h5></center>
+    <center>
+      <div class="ws">
+        <div class="tanggal">
+          <center>
+            <script>
+              var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+              var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+              var date = new Date();
+              var day = date.getDate();
+              var month = date.getMonth();
+              var thisDay = date.getDay(),
+              thisDay = myDays[thisDay];
+              var yy = date.getYear();
+              var year = (yy < 1000) ? yy + 1900 : yy;
+              document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+            </script>
+          </center>
+        </div>
+        <script src="https://www.muslimpro.com/muslimprowidget.js?cityid=1648473&amp;language=id&amp;timeformat=24" async=""></script>
+      </div>
+
+      <!-- akhir jadwal -->
+
+      <!-- qoutes -->
+
+      <div class="quotes">
+        <script language="JavaScript">
+
+          quotes = new Array(17);
+
+          quotes[0] = "Quotes Of The Day <br><br> Marah itu gampang. Tapi marah kepada siapa, dengan kadar kemarahan yang pas, pada saat dan tujuan yang tepat, serta dengan cara yang benar itu yang sulit. <br><br> ~Aristoteles~";
+
+          quotes[1] = "Quotes Of The Day <br><br> Sukses Dalam Hidup Tidak Ditentukan Oleh Kartu Yang Baik, Tapi Dengan Cara Memainkan Kartu Buruk Dengan Baik. <br><br> ~Joshua Dool~";
+
+          quotes[2] = "Quotes Of The Day <br><br> Kesalahan orang lain terletak pada mata kita, tetapi kesalahan kita sendiri terletak di punggung kita. <br><br>~Ruchert~";
+
+          quotes[3] = "Quotes Of The Day <br><br> Orang yang paling tidak bahagia ialah mereka yang paling takut pada perubahan. <br><br>~Mignon McLaughlin~";
+
+          quotes[4] = "Quotes Of The Day <br><br> Pendidikan yang baik tidak menjamin pembentukan watak yang baik.<br><br>~Fonttenelle~";
+
+          quotes[5] = "Quotes Of The Day <br><br> Keberhasilan adalah kemampuan untuk melewati dan mengatasi dari satu kegagalan ke kegagalan berikutnya tanpa kehilangan semangat. <br><br>~Winston Chuchill~";
+
+          quotes[6] = "Quotes Of The Day <br><br> Jika kamu tidak menyerah, kamu masih punya kesempatan. Dan, jika kamu kecil, kamu harus sangat fokus dan mengandalkan otakmu, bukan kekuatanmu. <br><br>~Jack Ma~";
+
+          quotes[7] = "Quotes Of The Day <br><br> Ketika kecenderungan alami berkembang menjadi keinginan yang dipenuhi oleh gairah, maka dia akan maju menuju tujuannya dengan penuh semangat. <br><br>~Nikola Tesla~";
+
+          quotes[8] = "Quotes Of The Day <br><br> Dalam hari selalu ada kemungkinan, dalam hari pasti ada kesempatan. <br><br>~Iwan Fals~";
+
+          quotes[9] = "Quotes Of The Day <br><br> Anda lebih baik mencoba sesuatu kemudian gagal, daripada tidak melakukannya sama sekali. <br><br>~Mark Jukerberg~";
+
+          quotes[10] = "Quotes Of The Day <br><br> Jangan menolak pria karena miskin, karena kalau sudah mapan seleranya bukan kamu. <br><br>~Mardigu Wowiek~";
+
+          quotes[11] = "Quotes Of The Day <br><br> Jika kamu tidak bisa menjelaskannya dengan sederhana, maka kamu belum benar-benar memahaminya dengan baik <br><br>~Albert Einstein~";
+
+          quotes[12] = "Quotes Of The Day <br><br> Ketika satu pintu kebahagiaan menutup, pintu yang lain terbuka. namun seringkali kita menatap terlalu lama pada pintu yang telah tertutup sehingga kita tidak melihat pintu lain yang sudah terbuka untuk kita. <br><br>~Helen Keller~";
+
+          quotes[13] = "Quotes Of The Day <br><br> Yang akan bertahan hidup bukanlah spesies yang paling kuat, bukan pula yang paling pintar; akan tetapi yang paling mampu berubah. <br><br>~Charles Darwin~";
+
+          quotes[14] = "Quotes Of The Day <br><br> Tetapkan tujuan, tantang diri Anda dan capai tujuan tersebut. Hiduplah dengan sehat dan hitunglah setiap waktu yang Anda miliki. Bangkitlah mengatasi rintangan dan fokus pada yang positif. <br><br>~Robbert H. Goddard~";
+
+          quotes[15] = "Quotes Of The Day <br><br> Perbanyak rasa bersyukur. Ucapkan terima kasih pada setiap orang yang kamu temui atas segala sesuatu yang mereka lakukan untukmu. <br><br>~Brian Tracy~";
+
+          quotes[16] = "Quotes Of The Day <br><br> Kurang cerdas dapat diperbaiki dengan belajar. Kurang cakap dapat dihilangkan dengan pengalaman. Namun tidak jujur itu sulit diperbaiki. <br><br>~Bung Hatta~";
+
+          index = Math.floor(Math.random() * quotes.length);
+
+          document.write("\n");
+
+          document.write(quotes[index]);
+
+        </script>
+      </div>
+
+      <!-- akhir Qoutes -->
+
+    </center>
+    <center>
+
+      <!-- status -->
+
+      <div class="status">
+        $(if login-by == 'trial')
+        <div style="text-align: center; font-weight:bold; margin-top:10px;">Selamat datang !</div>
+        $(elif login-by != 'mac')
+        <div style="text-align: center; font-weight:bold; margin-top:10px;">Selamat datang</div>
+        <div id="user" style="text-align: center; font-weight:bold; margin-top:10px;">$(username)</div> 
+        $(endif) 
+        <!--    <div class="notif" id="notifikasi"></div> -->
+        <div style="padding:10px;"><a class="a" id="cek" href="./detail.html"></a></div>
+        <form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+
+          <table class="tstatus">
+            <tr>
+              <td align="right" style="width:40%;">IP</td>
+              <td>$(ip)</td>
+            </tr>
+            <tr>
+              <td align="right">UL | DL</td>
+              <td>$(bytes-in-nice) | $(bytes-out-nice)</td>
+            </tr>
+            <tr>
+              <td align="right">Aktif</td>
+              <td>$(uptime)</td>
+            </tr>
+            $(if remain-bytes-total)
+            <tr>
+              <td align="right">Sisa Kuota</td>
+              <td>$(remain-bytes-total-nice)</td>
+            </tr>
+            $(endif)
+            $(if session-time-left)
+            <tr>
+              <td align="right">Sisa Waktu</td>
+              <td>$(session-time-left)</td>
+            </tr>
+            $(endif)
+            $(if blocked == 'yes')
+            <tr>
+              <td align="right">Status</td>
+              <td><div style="color: #FF8080"><a href="$(link-advert)" target="hotspot_advert">advertisement</a> required</div></td>
+            </tr>
+            $(elif refresh-timeout)
+            <tr>
+              <td align="right">Refresh</td>
+              <td>$(refresh-timeout)</td>
+            </tr>
+            <tr >
+              <td align="right">Expired</td>
+              <td style="padding-top:0px; height: 22px; width: 100%; padding-left:2px;"><iframe id="exp" frameborder="0" scrolling="no" src="about:blank"></iframe></td>
+            </tr>
+            $(endif)
+          </table>
+          $(if login-by-mac != 'yes')
+          <br>
+          <input type="submit" class="buttonb" value=" Logout | Keluar ">
+          $(endif)
+
+        </form>
+        <br>
+      </div>
+
+      <!-- akhir status -->
+
+      <!-- pricelist -->
+
+      <div class="middle1">
+        <h3 id="title1"></h3>
+        <center>
+          <table id="paketwifi" align="center" class="tpaketwifi"></table>
+        </center>
+        <script type="text/javascript" charset="utf-8">
+          d3.text("paket-wifi.csv", function(data) {
+            var parsedCSV = d3.csv.parseRows(data);
+
+            var container = d3.select("table.tpaketwifi")
+            .append("div")
+
+            .selectAll("tr")
+            .data(parsedCSV).enter()
+            .append("tr")
+
+            .selectAll("td")
+            .data(function(d) { return d; }).enter()
+            .append("td")
+            .text(function(d) { return d; });
+          });
+        </script>
+        <br>
+        <center><h3>diamond tidak tersedia</h3></center>
+      </div>
+
+      <!-- akhir price -->
+
+    </center>
+    <script type="text/javascript" >
+      var mydata = JSON.parse(data);
+      document.getElementById('title').innerHTML =  mydata[0].nama ;
+      document.getElementById('cek').innerHTML =  mydata[5].masaaktif ;
+      document.getElementById('notifikasi').innerHTML =  mydata[7].notifikasi ;
+        //get vaidity
+        var usr = document.getElementById('user').innerHTML
+        var url = "https://example.com/status/status.php?name="; // http://ip-server-mikhmon/mikhmonv2/status/status.php?name=
+        var SessionName = "wifijoss"
+        var getvalid = url+usr+"&session="+SessionName
+        document.getElementById('exp').src = getvalid;	
+        // jika kurang jelas silakan kunjungi https://laksa19.github.io/tuttorial.html
+      </script>
+      <script  type="text/javascript" >
+        var mydata = JSON.parse(data);
+        var mydatat = JSON.parse(datatitle);
+        document.getElementById('title1').innerHTML = mydatat[0].title1 ;
+        document.getElementById('title2').innerHTML = mydatat[1].title2 ;
+        document.getElementById('title3').innerHTML = mydatat[2].title3 ;
+        document.getElementById('title4').innerHTML = mydatat[3].title4 ;
+
+      </script>
+
+    </body>
+    </html>
+    >
+

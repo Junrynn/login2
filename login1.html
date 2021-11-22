@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title id="title"></title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="expires" content="-1" />
+	<link rel="icon" href="favicon.png" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="d3.v3.min.js"></script>
+	<script type="text/javascript" src="data.js"></script>
+
+	<!-- jam -->
+
+	<script type="text/javascript">
+		window.onload = function() { jam(); }
+
+		function jam() {
+			var e = document.getElementById('jam'),
+			d = new Date(), h, m, s;
+			h = d.getHours();
+			m = set(d.getMinutes());
+			s = set(d.getSeconds());
+
+			e.innerHTML = h +':'+ m +':'+ s;
+
+			setTimeout('jam()', 1000);
+		}
+
+		function set(e) {
+			e = e < 10 ? '0'+ e : e;
+			return e;
+		}
+	</script>
+
+	<!-- akhir jam -->
+
+	<!-- contact -->
+
+	<script> 
+		window.intergramId = "1802565352";
+		window.intergramCustomizations = {
+			titleClosed: 'Chat Admin',
+			titleOpen: 'Admin Junrynn',
+			introMessage: 'Hallo sobat junrynn ada yang bisa di bantu?',
+			autoResponse: 'Silahkan tunggu admin akan segera membalas :)',
+			autoNoResponse: 'Mohon tunggu ya ' +
+			'Atau bisa kembali nanti :)',
+			mainColor: "#E91E63",
+			alwaysUseFloatingButton: false
+		};
+	</script>
+	<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+
+	<!-- akhir Contact -->
+
+</head>
+<body class="bg">
+	<div class="container">
+
+		<!-- Ucapan Selamat -->
+
+		<script type="text/javascript">
+			document.write("<center><font size=+3 style='color: #008CCA; background-color: rgba(255, 255, 255, 0.7); border: none; border-radius: 10px; padding: 6px;'>");
+			var day = new Date();
+			var currentHour = day.getHours();
+			if (currentHour >= 0 && currentHour < 12) {
+				document.write("Selamat Pagi");
+			} else if (currentHour == 12) {
+				document.write("Selamat Siang");
+			} else if (currentHour >= 12 && currentHour <= 17) {
+				document.write("Selamat Sore");
+			} else {
+				document.write("Selamat Malam");
+			}
+			document.write("</font></center>");
+		</script>
+		<br>
+
+		<!-- akhir ucapan -->
+
+		<!-- jam -->
+
+		<center><h5 style="font-size: 25px; font-family: verdana; width: 200px; margin: 1px; margin-top: -6px; background-color: rgba(255, 255, 255, 0.7); color: #008CCA; border: none; border-radius: 10px;" id="jam"></h5></center>
+
+		<!-- akhir jam -->
+
+		<!-- jadwal sholat -->
+
+		<center>
+			<div class="ws">
+				<div class="tanggal">
+					<center>
+						<script>
+							var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+							var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+							var date = new Date();
+							var day = date.getDate();
+							var month = date.getMonth();
+							var thisDay = date.getDay(),
+							thisDay = myDays[thisDay];
+							var yy = date.getYear();
+							var year = (yy < 1000) ? yy + 1900 : yy;
+							document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+						</script>
+					</center>
+				</div>
+				<script src="https://www.muslimpro.com/muslimprowidget.js?cityid=1648473&amp;language=id&amp;timeformat=24" async=""></script>
+			</div>
+
+			<!-- qoutes -->
+
+			<div class="quotes">
+				<script language="JavaScript">
+
+					quotes = new Array(17);
+
+					quotes[0] = "Quotes Of The Day <br><br> Marah itu gampang. Tapi marah kepada siapa, dengan kadar kemarahan yang pas, pada saat dan tujuan yang tepat, serta dengan cara yang benar itu yang sulit. <br><br> ~Aristoteles~";
+
+					quotes[1] = "Quotes Of The Day <br><br> Sukses Dalam Hidup Tidak Ditentukan Oleh Kartu Yang Baik, Tapi Dengan Cara Memainkan Kartu Buruk Dengan Baik. <br><br> ~Joshua Dool~";
+
+					quotes[2] = "Quotes Of The Day <br><br> Kesalahan orang lain terletak pada mata kita, tetapi kesalahan kita sendiri terletak di punggung kita. <br><br>~Ruchert~";
+
+					quotes[3] = "Quotes Of The Day <br><br> Orang yang paling tidak bahagia ialah mereka yang paling takut pada perubahan. <br><br>~Mignon McLaughlin~";
+
+					quotes[4] = "Quotes Of The Day <br><br> Pendidikan yang baik tidak menjamin pembentukan watak yang baik.<br><br>~Fonttenelle~";
+
+					quotes[5] = "Quotes Of The Day <br><br> Keberhasilan adalah kemampuan untuk melewati dan mengatasi dari satu kegagalan ke kegagalan berikutnya tanpa kehilangan semangat. <br><br>~Winston Chuchill~";
+
+					quotes[6] = "Quotes Of The Day <br><br> Jika kamu tidak menyerah, kamu masih punya kesempatan. Dan, jika kamu kecil, kamu harus sangat fokus dan mengandalkan otakmu, bukan kekuatanmu. <br><br>~Jack Ma~";
+
+					quotes[7] = "Quotes Of The Day <br><br> Ketika kecenderungan alami berkembang menjadi keinginan yang dipenuhi oleh gairah, maka dia akan maju menuju tujuannya dengan penuh semangat. <br><br>~Nikola Tesla~";
+
+					quotes[8] = "Quotes Of The Day <br><br> Dalam hari selalu ada kemungkinan, dalam hari pasti ada kesempatan. <br><br>~Iwan Fals~";
+
+					quotes[9] = "Quotes Of The Day <br><br> Anda lebih baik mencoba sesuatu kemudian gagal, daripada tidak melakukannya sama sekali. <br><br>~Mark Jukerberg~";
+
+					quotes[10] = "Quotes Of The Day <br><br> Jangan menolak pria karena miskin, karena kalau sudah mapan seleranya bukan kamu. <br><br>~Mardigu Wowiek~";
+
+					quotes[11] = "Quotes Of The Day <br><br> Jika kamu tidak bisa menjelaskannya dengan sederhana, maka kamu belum benar-benar memahaminya dengan baik <br><br>~Albert Einstein~";
+
+					quotes[12] = "Quotes Of The Day <br><br> Ketika satu pintu kebahagiaan menutup, pintu yang lain terbuka. namun seringkali kita menatap terlalu lama pada pintu yang telah tertutup sehingga kita tidak melihat pintu lain yang sudah terbuka untuk kita. <br><br>~Helen Keller~";
+
+					quotes[13] = "Quotes Of The Day <br><br> Yang akan bertahan hidup bukanlah spesies yang paling kuat, bukan pula yang paling pintar; akan tetapi yang paling mampu berubah. <br><br>~Charles Darwin~";
+
+					quotes[14] = "Quotes Of The Day <br><br> Tetapkan tujuan, tantang diri Anda dan capai tujuan tersebut. Hiduplah dengan sehat dan hitunglah setiap waktu yang Anda miliki. Bangkitlah mengatasi rintangan dan fokus pada yang positif. <br><br>~Robbert H. Goddard~";
+
+					quotes[15] = "Quotes Of The Day <br><br> Perbanyak rasa bersyukur. Ucapkan terima kasih pada setiap orang yang kamu temui atas segala sesuatu yang mereka lakukan untukmu. <br><br>~Brian Tracy~";
+
+					quotes[16] = "Quotes Of The Day <br><br> Kurang cerdas dapat diperbaiki dengan belajar. Kurang cakap dapat dihilangkan dengan pengalaman. Namun tidak jujur itu sulit diperbaiki. <br><br>~Bung Hatta~";
+
+					index = Math.floor(Math.random() * quotes.length);
+
+					document.write("\n");
+
+					document.write(quotes[index]);
+
+				</script>
+			</div>
+
+			<!-- akhir Qoutes -->
+
+		</center>
+
+		<!-- akhir jadwal -->
+
+		<!-- login -->
+
+		<div class="left">
+			<center><img src="img/logo.png" alt="kemangi 41" style="border-radius: 5px; width:200px; height:auto;"/><br></center>
+			<h3></h3>
+			<div class="tab">
+				<button class="tablinks" onclick="openLogin(event, 'KV')" id="kodevoucher">Voucher</button>
+			</div>
+			<div id="KV" class="tabcontent">
+				$(if chap-id)
+				<form name="sendinkv" action="$(link-login-only)" method="post">
+					<input type="hidden" name="username" />
+					<input type="hidden" name="password" />
+					<input type="hidden" name="dst" value="$(link-orig)" />
+					<input type="hidden" name="popup" value="true" />
+				</form>
+				<script type="text/javascript" src="/md5.js"></script>
+				<script type="text/javascript">
+					function doLoginkv() {
+						document.sendinkv.username.value = document.loginkv.usernamekv.value;
+						document.sendinkv.password.value = hexMD5('$(chap-id)' + document.loginkv.passwordkv.value + '$(chap-challenge)');
+						document.sendinkv.submit();
+						return false;
+					}
+				</script>
+				$(endif)
+				<div>
+					<center>
+						<form autocomplete="off" name="loginkv" action="$(link-login-only)" method="post"
+						$(if chap-id) onSubmit="return doLoginkv()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+						<input id="user" name="usernamekv" type="text" placeholder="Voucher" onchange="updateInput(this.value)" value="$(username)"/>
+						<input id="pass" name="passwordkv" placeholder="Password" type="hidden"/>
+						<input type="submit" class="buttona" value=" Login " />
+					</form>
+				</center>
+				<script type="text/javascript">
+					function updateInput(passwd){
+						document.getElementById("pass").value = passwd;
+					}
+				</script>
+			</div>
+		</div>
+		<div id="cekuser" class="modal-window">
+			<div>
+				<a style="font-weight:bold;" href="#" title="Close" class="modal-close">X</a>
+				<h1 id="title5"></h1>
+				<p id="notiferr"></p>
+			</div>
+		</div>
+		<div id="expired" class="modal-window">
+			<div>
+				<a style="font-weight:bold;" href="#" title="Close" class="modal-close">X</a>
+				<h1 id="title6"></h1>
+				<p id="notifexp"></p>
+			</div>
+		</div>
+		<script>
+			function openLogin(evt, loginName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(loginName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+
+			document.getElementById("kodevoucher").click();
+		</script>
+
+	</div>
+
+	<!-- akhir login -->
+
+	<!-- price -->
+
+	<div class="middle">
+		<h3 id="title1"></h3>
+		<center><table id="paketwifi" align="center" class="tpaketwifi"></table></center>
+		<script type="text/javascript" charset="utf-8">
+			d3.text("paket-wifi.csv", function(data) {
+				var parsedCSV = d3.csv.parseRows(data);
+
+				var container = d3.select("table.tpaketwifi")
+				.append("div")
+
+				.selectAll("tr")
+				.data(parsedCSV).enter()
+				.append("tr")
+
+				.selectAll("td")
+				.data(function(d) { return d; }).enter()
+				.append("td")
+				.text(function(d) { return d; });
+			});
+		</script>
+		<br>
+		<center><h3>diamond tidak tersedia</h3></center>
+	</div>
+
+	<!-- akhir price -->
+
+	<!-- Rules -->
+
+	<div class="right">
+		<h3 id="title2"></h3>
+		<p id="keterangan"></p>
+		<h3 id="title3"></h3>
+		<p id="pembayaran"></p>
+		<h3 id="title4"></h3>
+		<a href="https://wa.me/082111124759" style="text-decoration: none;"><p id="phone"></p></a>
+		<a href="https://instagram.com/junryn_" style="text-decoration: none;"><p id= "insta"></p></a>
+
+	</div>
+
+	<!-- akhir rule -->
+
+	<!-- Copyright -->
+
+	<div class="footer">
+		<i>Copyright &copy; <i id="copyright"></i></i><br>
+		<i>Powered by <a href="https://facebook.com/junrynn">Junrynn.id</a></i>
+	</div>
+
+	<!-- akhir Copyright -->
+
+	<script  type="text/javascript" >
+		var mydata = JSON.parse(data);
+		var mydatat = JSON.parse(datatitle);
+		var mydataerr = JSON.parse(dataerr);
+		var error = "$(error)";
+		if (error == "user $(username) has reached uptime limit") {
+			document.getElementById('title6').innerHTML = mydatat[5].title6 ;
+			document.getElementById('notifexp').innerHTML = mydataerr[0].expired ;
+			window.location.href = "./login#expired";
+
+		} else if (error == "session limit reached ($(error-orig))") {
+			document.getElementById('title6').innerHTML = mydatat[5].title6 ;
+			document.getElementById('notifexp').innerHTML = mydataerr[0].expired ;
+			window.location.href = "./login#expired";
+
+		} else if (error == "user $(username) has reached traffic limit") {
+			document.getElementById('title6').innerHTML = mydatat[5].title6 ;
+			document.getElementById('notifexp').innerHTML = mydataerr[0].expired ;
+			window.location.href = "./login#expired";
+
+		} else if (error == "invalid username or password") {
+			document.getElementById('title5').innerHTML = mydatat[4].title5 ;
+			document.getElementById('notiferr').innerHTML = mydataerr[1].invaliduser ;
+			window.location.href = "./login#cekuser";
+
+		} else if (error == "auth-in-progress = already authorizing, retry later") {
+			document.getElementById('title5').innerHTML = mydatat[4].title5 ;
+			document.getElementById('notiferr').innerHTML = mydataerr[2].sudahlogin ;
+			window.location.href = "./login#cekuser";
+
+		} else if (error == "no more sessions are allowed for user $(username)") {
+			document.getElementById('title5').innerHTML = mydatat[4].title5 ;
+			document.getElementById('notiferr').innerHTML = mydataerr[2].sudahlogin ;
+			window.location.href = "./login#cekuser";
+
+		} else if (error == "invalid username ($(username)): this MAC address is not yours") {
+			document.getElementById('title5').innerHTML = mydatat[4].title5 ;
+			document.getElementById('notiferr').innerHTML = mydataerr[3].ilegal ;
+			window.location.href = "./login#cekuser";
+
+		} else if (error == "you are not logged in (ip $(ip))") {
+			document.getElementById('title5').innerHTML = mydatat[4].title5 ;
+			document.getElementById('notiferr').innerHTML = mydataerr[3].ilegal ;
+			window.location.href = "./login#cekuser";
+
+		} else if (error == "RADIUS server is not responding") {
+			document.getElementById('title5').innerHTML = mydatat[4].title5 ;
+			document.getElementById('notiferr').innerHTML = mydataerr[3].radius ;
+			window.location.href = "./login#cekuser";
+
+		} else {
+
+
+		}
+		document.getElementById('title1').innerHTML = mydatat[0].title1 ;
+		document.getElementById('title2').innerHTML = mydatat[1].title2 ;
+		document.getElementById('title3').innerHTML = mydatat[2].title3 ;
+		document.getElementById('title4').innerHTML = mydatat[3].title4 ;
+
+
+		document.getElementById('title').innerHTML = mydata[0].nama ;
+		document.getElementById('pembayaran').innerHTML = mydata[1].pembayaran ;
+		document.getElementById('phone').innerHTML = mydata[2].phone ;
+		document.getElementById('keterangan').innerHTML = mydata[3].keterangan ;
+		document.getElementById('copyright').innerHTML = mydata[4].copyright ;
+		document.getElementById('notifikasi').innerHTML = mydata[7].notifikasi ;
+		document.getElementById('insta').innerHTML = mydata[8].insta ;
+
+
+	</script>
+
+</body>
+</html>
