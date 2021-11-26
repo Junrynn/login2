@@ -109,9 +109,9 @@
     .banner {
       position: absolute;
       margin-top: 0;
-      width: 559.16px;
+      width: 90%;
       height: 192.1px;
-      left: 20px;
+      left: calc(50% - 540px/2 + 0px);
       top: 80px;
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), url(img/banner.jpg);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -412,7 +412,7 @@
    .footer .navigasi {
      position: absolute;
      height: 216px;
-     left: calc(50% - 600px/2 + 130px);
+     left: calc(50% - 600px/2 + 160px);
      top: 20px;
      box-sizing: border-box;
      font-family: Roboto;
