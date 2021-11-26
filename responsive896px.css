@@ -58,7 +58,7 @@
 
     .container {
       font-family: arial, sans-serif;
-      width: 896px;
+      width: 100%;
       background: #E2E2E2;
     }
     .header {
@@ -105,7 +105,8 @@
 
     .navigasi1 {
       position: absolute;
-      width: 896px;
+      width: 100%;
+      left: calc(50% - 100%/2 + 0px);
       top: 60.27px;
       text-align: center;
     }
@@ -124,13 +125,13 @@
 
     .banner {
       position: relative;
-      width: 385px;
+      width: 40%;
       height: 200px;
-      left: 43px;
+      left: calc(28% - 40%/2 + 0px);
       top: 370px;
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), url(img/banner.jpg);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 5px;
+      border-radius: 35.2766px;
       background-size: cover;
     }
 
@@ -138,9 +139,9 @@
       background: rgba(255, 255, 255, 0.4);
       border-radius: 3px;
       position: relative;
-      width: 300.07px;
+      width: 90%;
       height: 68.47px;
-      left: 20.09px;
+      left: 10px;
       top: 40.96px;
     }
 
@@ -148,7 +149,7 @@
       font-family: Sedan;
       font-style: normal;
       font-weight: normal;
-      font-size: 22px;
+      font-size: 18px;
       line-height: 30px;
       color: #000000;
       border: 0 solid #000000;
@@ -159,7 +160,7 @@
       font-family: Sedan;
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 19px;
       color: #000000;
       border: 0 solid rgba(0, 0, 0, 0.37);
@@ -170,7 +171,7 @@
       position: relative;
       width: 154.44px;
       height: 38.42px;
-      left: 20.09px;
+      left: 10px;
       top: 50.52px;
       background: rgba(156, 200, 253, 0.45);
       border-radius: 20.28px;
@@ -191,8 +192,9 @@
 
     .ucapan {
       position: absolute;
-      width: 896px;
+      width: 100%;
       top: 90px;
+      left: calc(50% - 100%/2 + 0px);
       font-family: Sedan;
       font-style: normal;
       font-weight: normal;
@@ -207,9 +209,9 @@
 
     .left {
       position: absolute;
-      width: 385px;
+      width: 50%;
       height: 200px;
-      left: 260px;
+      left: calc(50% - 50%/2 + 0px);
       top: 140px;
       background: linear-gradient(106.97deg, rgba(145, 156, 255, 0.3) 0%, rgba(98, 176, 255, 0.3) 100%);
       border: 1.30654px solid rgba(0, 0, 0, 0.6);
@@ -233,7 +235,7 @@
       position: absolute;
       width: 208.75px;
       height: 48.15px;
-      left: 84px;
+      left: calc(50% - 208.75px/2 + 0px);
       top: 95px;
       background: rgba(255, 255, 255, 0.98);
       outline: none;
@@ -252,7 +254,7 @@
       position: absolute;
       width: 142px;
       height: 34px;
-      left: 120px;
+      left: calc(50% - 142px/2 + 0px);
       top: 155px;
       background: #61B1FF;
       border-radius: 4px;
@@ -272,9 +274,9 @@
 
     .ws {
       position: absolute;
-      width: 388px;
+      width: 40%;
       height: 200px;
-      left: 464px;
+      right: calc(28% - 40%/2 + 0px);
       top: 370px;
       background: rgba(234, 234, 234, 0.94);
       border: 1px solid #62B0FF;
@@ -299,7 +301,7 @@
       padding: 0;
       height: 30px;
       line-height: 30px;
-      font-size: 18px;
+      font-size: 12px;
     }
     .ws .tanggal {
       color: #888;
@@ -317,8 +319,8 @@
       float: right;
     }
     .ws .MPtimetable {
-      width: 300px;
-      margin-left: 38px;
+      width: 90%;
+      margin-left: 13%;
       margin-top: 60px;
     }
     .ws .MPtimetable tr:first-child {
@@ -326,7 +328,7 @@
     }
     .ws .MPtimetable tr {
       display: inline-table;
-      width: 95px;
+      width: 25%;
       position: relative;
       margin-left: 5px;
       margin-bottom: 30px;
