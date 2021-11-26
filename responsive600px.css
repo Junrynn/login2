@@ -411,7 +411,7 @@
    }
 
    .footer .navigasi {
-     position: absolute;
+     position: relative;
      width: 400px;
      height: 216px;
      left: 122px;
