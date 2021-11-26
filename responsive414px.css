@@ -415,7 +415,7 @@
  .footer .navigasi {
    position: absolute;
    height: 21px;
-   left: calc(50% - 414px/2 + 55px);
+   left: calc(50% - 414px/2 + 75px);
    top: 26px;
    font-family: Roboto;
    font-style: normal;
