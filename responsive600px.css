@@ -192,9 +192,9 @@
 
     .left {
       position: absolute;
-      width: 70%;
+      width: 85%;
       height: 246.94px;
-      left: calc(50% - 70%/2 + 0px);
+      left: calc(50% - 85%/2 + 0px);
       top: 319px;
       background: linear-gradient(106.97deg, rgba(145, 156, 255, 0.3) 0%, rgba(98, 176, 255, 0.3) 100%);
       border: 1px solid rgba(0, 0, 0, 0.6);
@@ -255,9 +255,9 @@
 
     .ws {
       position: absolute;
-      width: 70%;
+      width: 85%;
       height: 163.48px;
-      left: calc(50% - 70%/2 + 0px);
+      left: calc(50% - 85%/2 + 0px);
       top: 581px;
       background: rgba(234, 234, 234, 0.94);
       border: 1px solid #62B0FF;
