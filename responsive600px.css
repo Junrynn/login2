@@ -412,7 +412,7 @@
    .footer .navigasi {
      position: absolute;
      height: 216px;
-     left: calc(50% - 600px/2 + 150px);
+     left: calc(50% - 600px/2 + 130px);
      top: 20px;
      box-sizing: border-box;
      font-family: Roboto;
