@@ -25,7 +25,6 @@
       font: inherit;
       vertical-align: baseline;
     }
-    /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure, 
     footer, header, hgroup, menu, nav, section {
       display: block;
@@ -411,22 +410,21 @@
    }
 
    .footer .navigasi {
-     position: relative;
-     width: 400px;
+     position: absolute;
      height: 216px;
-     left: 122px;
+     left: calc(50% - 600px/2 + 160px);
      top: 20px;
      box-sizing: border-box;
      font-family: Roboto;
      font-style: normal;
      font-weight: normal;
-     font-size: 18px;
+     font-size: 25px;
      line-height: 21px;
      color: #000000;
    }
 
    .footer .navigasi a {
-     padding: 5px 25px 5px 0; 
+     padding: 15px; 
      text-decoration: none;
      color: #fff;
    }
